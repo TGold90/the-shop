@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.site-header {
+    background-color: transparent;
+    width: 100vw;
+    display: flex;
+    justify-content: space-between;
+    border: solid 1px black;
+    align-items: center;
+    position: relative;
+    z-index: 2;
+    /* opacity: 0; */
+}
+
+header span {
+    margin: 0 0 0 20px;
+}
+
+.nav-container {
+    display: flex;
+    gap: 25px;
+    width: 60%;
+    justify-content: flex-end;
+    margin: 0 20px 0 0;
+}
+
+nav ul {
+    display: flex;
+    gap: 15px;
+    list-style-type: none;
+}
+
+a {
+    font-weight: 500;
+    color: #000;
+    text-decoration: inherit;
+}
+
+a:hover {
+    color: #cdbf86;
+}
+
+.main-hero {
+    background: linear-gradient(to bottom, #ff0000, #0000ff);
+    position: absolute;
+    height: 500px;
+    width: 100vw;
+    top: 0;
+}
