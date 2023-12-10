@@ -15,7 +15,7 @@ export default function NavBar() {
             </nav>
             <nav className="business-nav">
                 <ul>
-                    <li>Contact</li>
+                    <li className="border-solid">Contact</li>
                     <li>About</li>
                     <li>Log In</li>
                 </ul>
