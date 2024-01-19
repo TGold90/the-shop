@@ -27,6 +27,7 @@ header span {
 }
 
 nav ul {
+
     display: flex;
     gap: 15px;
     list-style-type: none;
@@ -48,7 +49,7 @@ a:active {
 }
 
 .main-hero {
-    background: linear-gradient(to bottom, #ff0000, #0000ff);
+    background: linear-gradient(to bottom, #4e12af, #1265a9);
     position: relative;
     height: 500px;
     width: 100vw;
@@ -74,7 +75,7 @@ a:active {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    background: radial-gradient(circle at 40% 40%, #f0f0f0, #3a1313 70%, #505050 100%);
+    background: radial-gradient(circle at 40% 40%, #f0f0f0, #611d81 70%, #505050 100%);
     box-shadow: 0px 0px 8px 0px rgb(50 50 50 / 80%);
     animation: float 3s ease-in-out infinite;
 }
