@@ -1,6 +1,7 @@
 const { Model, DataTypes } = require('sequelize');
 const sequelize = require('../path/to/your/sequelize/config'); // Adjust the path as necessary
 const User = require('./User'); // Import the User model
+const CartItem = require('./CartItem'); // Import the CartItem model
 
 
 class Cart extends Model { }
@@ -27,6 +28,10 @@ Cart.init({
 Cart.belongsTo(User, {
     foreignKey: 'userId',
     as: 'user'
+});
+Cart.hasMany(CartItem, {
+    foreignKey: 'cartId',
+    as: 'items'
 });
 
 module.exports = Cart;
